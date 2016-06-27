@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#fname").change(function(){
+				$("<p>Input 1 Changed</p>").appendTo("#demo");
+			});
+			$("#lname").change(function(){
+				$("<p>Input 2 Changed</p>").appendTo("#demo");
+			});
+		});
+	</script>
+</head>
+<body>
+
+<form name='demo_form'>
+First name: <input type="text" id="fname"><br>
+Last name: <input type="text" id="lname"><br>
+<input type="submit" value="Submit">
+</form>
+<p id="demo"></p>
+</body>
+</html>

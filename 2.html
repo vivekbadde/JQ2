@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html>  
+	<head>  
+  		  
+  		<title>2</title>  
+	</head> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <script>
+
+      $(document).ready(function()
+      {
+      	$("#field1").blur(function(){
+      		alert("Field 1 unselected")
+      	})
+
+      });
+           
+           
+        </script>
+	<body>  
+		<form>  
+		Field 1:	<input id="field1" type="text">  <br />
+			Field 2: <input id="field2" type="text">  
+		</form>  
+  <!-- Write something in the input Field 1, and then click outside the field to check lose focus.  -->
+	</body>  
+</html> 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+      <meta charset="utf-8">  
+      <title>BUTTON CLICK</title> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <script>
+            $(document).ready(function(){
+                                $("button").bind("click", function(){  
+                                $( "<span> Single click </span>").appendTo( "#click1" );  
+                                                              });
+                           $("button").bind("dblclick", function(){  
+                            $( "<span> Double click </span>").appendTo( "#d-click1" );  
+                            });  
+                                                              });  
+            
+        </script>
+</head>  
+<body>  
+    <button>CLICK ME !!!</button>
+    <p id="click1">This is a click Event</p>
+    <p id="d-click1">This is a double-click Event</p>
+    </body>  
+    </html> 
